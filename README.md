@@ -1,34 +1,41 @@
 # 🕋 Intelligent System for Hajj and Umrah Crowd Management
 
-This project is part of my Big Data Analytics assignment at IIUM. I developed an intelligent system to monitor, predict, and manage pilgrim movements using a dataset of 10,000 records.
-## 📋 Project Overview
+An end-to-end Big Data analytics project designed to optimize pilgrim safety and ritual efficiency using a dataset of 10,000 records.
 
-The goal of this system is to improve the pilgrimage experience by using data to solve real-world problems like overcrowding and transit delays. I explored four main types of data science questions to give a complete picture of the crowd dynamics.
-## 🧪 Key Analysis & Findings
-### 1. Predicting the Crowd (Predictive)
+---
 
-I used a Random Forest model to predict crowd density levels based on things like walking speed, temperature, and even how tired the pilgrims are.
-### 2. Finding Stress Triggers (Diagnostic)
+## 🚀 The "Wow" Factor: 4 Levels of Analytics
+This project goes beyond simple charts by implementing the full data science spectrum required for advanced Big Data Analytics:
 
-By looking at "Feature Importance," I found that physical distance between people and walking speed are the biggest reasons why pilgrims feel stressed.
-### 3. Does Technology Help? (Causal)
+* **Predictive**: Forecasts **Crowd Density** using Random Forest models.
+* **Diagnostic**: Pinpoints the **root causes of stress** (it's personal space, not just the heat!).
+* **Causal**: Statistically measures the impact of **AR Navigation** on ritual completion times.
+* **Prescriptive**: A logic engine that **recommends transport** based on live weather safety constraints.
 
-I ran a statistical test to see if AR Navigation actually saves time. Interestingly, the data showed it hasn't made a huge difference yet, suggesting that rituals have a natural pace that gadgets can't speed up.
-### 4. Smart Transport Advice (Prescriptive)
+---
 
-I built a recommendation system that tells pilgrims the best way to travel. For example, even if walking is usually fast, it suggests taking the Train if it starts raining to keep everyone safe and comfortable.
-🛠️ How I Built It
+## 🛠️ Built With
+This project leverages the standard Python data science stack:
 
-    Cleaning: I fixed timestamps, handled missing info, and scaled the numbers so the model stays fair.
+* **Language**: Python 3.x
+* **Data Wrangling**: Pandas & NumPy
+* **Machine Learning**: Scikit-Learn (Random Forest, Feature Importance)
+* **Statistical Testing**: SciPy (T-Tests for Causal Analysis)
+* **Visualization**: Matplotlib & Seaborn
 
-    Encoding: I turned categories like "Nationality" and "Activity Type" into formats the computer can actually calculate.
+---
 
-    Visualization: I used line charts and bar graphs to show the "pulse" of the crowd across 24 hours.
+## 🧠 Technical Highlights
+* **Robust Preprocessing**: Processed 10,000 rows using **Min-Max Scaling** and **One-Hot Encoding** to ensure model fairness and accuracy.
+* **Feature Engineering**: Extracted temporal features like **Hour of Day** to track the "pulse" of crowd movement.
+* **Defensive Coding**: Implemented checks for missing columns and data types to ensure the notebook is reproducible and error-free.
 
-🚀 How to Run
+---
 
-    Open the .ipynb file in Google Colab.
+## 📈 Key Findings
+1.  **Stress Drivers**: Physical distance and movement speed are the primary factors affecting pilgrim stress.
+2.  **Transport Logic**: Walking is fastest in high density, but the system prescribes **Train** during rain to prioritize safety.
+3.  **Efficiency**: Current AR technology shows a neutral impact on ritual speed, suggesting rituals maintain a traditional pace.
 
-    Upload the hajj_umrah_data.csv file.
-
-    Run all cells to see the 8 analysis questions and their results.
+---
+*Developed as part of the Big Data Analytics Final Assignment.*
